@@ -1,0 +1,7 @@
+{
+    "/app/web/api/*":{
+    "target": "https://plataforma.education.city",
+    "secure":false,
+    "changeOrigin":true
+    }
+}

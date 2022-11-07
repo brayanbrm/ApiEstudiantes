@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+  <div class="container">
+    <h1>Lista de estudiantes</h1><br>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">s_id</th>
+        <th scope="col">first_name</th>
+        <th scope="col">last_name</th>
+        <th scope="col">lv_id</th>
+        <th scope="col">group</th>
+        <th scope="col">email</th>
+        <th scope="col">phone_number</th>
+        <th scope="col">geolocation</th>
+        <th scope="col">status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes | ObjToArray">
+       <th>{{estudiante.s_id}}</th>
+        <td>{{estudiante.s_id}}</td>
+        <td>{{estudiante.last_name}}</td>
+        <td>{{estudiante.lv_id}}</td>
+        <td>{{estudiante.group}}</td>
+        <td>{{estudiante.email}}</td>
+        <td>{{estudiante.phone_number}}</td>
+        <td>{{estudiante.geolocation}}</td>
+        <td>{{estudiante.status}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<app-footer></app-footer>
